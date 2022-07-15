@@ -5,6 +5,7 @@ import chalk from "chalk"
 
 import routerPostNote from "./routes/postNoteRoute.js"
 import routerGetNote from "./routes/getNoteRoute.js"
+import routerSingUp from "./routes/singUpRoute.js";
 
 const PORT = process.env.PORT
 
@@ -18,6 +19,7 @@ app.use(express.json());
 
 app.use(routerPostNote)
 app.use(routerGetNote)
+app.use(routerSingUp)
 
 
 
