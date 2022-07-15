@@ -3,7 +3,8 @@ import dotenv from "dotenv";
 import cors from "cors"
 import chalk from "chalk"
 
-import routerNote from "./routes/postNoteRoute.js"
+import routerPostNote from "./routes/postNoteRoute.js"
+import routerGetNote from "./routes/getNoteRoute.js"
 
 const PORT = process.env.PORT
 
@@ -15,7 +16,8 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use(routerNote)
+app.use(routerPostNote)
+app.use(routerGetNote)
 
 
 
