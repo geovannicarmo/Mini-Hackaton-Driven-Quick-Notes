@@ -8,3 +8,10 @@ export const SchemaSingup = joi.object({
     password: joi.string().required(),
     passwordConfirm: joi.string().required()
 })
+
+
+export const SchemaLogin = joi.object({
+
+    email: joi.string().email().required(),
+    password: joi.string().required(),
+})
